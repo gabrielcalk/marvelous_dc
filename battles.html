@@ -5,40 +5,180 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style src = "./assets/bulma.css"></style>
-    <style src ="./assets/css/style.css"></style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <p>
-        <button class= "button is-danger is-medium">Commence</button>
-    </p>
-    <img src = "assets/images/background_image.jpg">
+    <header>
+        <h1>Choose Your Team</h1>
+        <hr>
+        <section class="is-flex is-justify-content-space-around">
+            <div>
+                <h2>You Can Choose:</h2><span id="options"></span><h2>Heroes</h2>
+            </div>
+            <div>
+                <button id="start_game" class="button is-danger">Battle</button>
+            </div>
+            <div>
+                <h2>You've already chosen:</h2>
+                <ul id="heroes_chosen">
+
+                </ul>
+            </div>
+        </section>      
+    </header>
     <main>
-    <div id = "Spider-Man"></div>
-    <div id = "Thor"></div>
-    <div id = "Iron-Man"></div>
-    <div id = "Hulk"></div>
-    <div id = "Captain-America"></div>
-    <div id = "Hawkeye"></div>
-    <div id = "Captain-Marvel"></div>
-    <div id = "Doctor-Strange"></div>
-    <div id = "Black-Panther"></div>
-    <div id = "Black-Widow"></div>
-    <div id = "Winter-Soldier"></div>
-    <div id = "Vision"></div>
-    <div id = "Ant-Man"></div>
-    <div id = "Scarlet-Witch"></div>
-    <div id = "Wasp"></div>
-    <div id = "Falcon"></div>
-    <div id = "Loki"></div>
-    <div id = "Thanos"></div>
-    <div id = "Ultron"></div>
-    <div id = "Groot"></div>
-    <div id = "Drax"></div>
-    <div id = "Star-Lord"></div>
-    <div id = "War-Machine"></div>
-    <div id = "Nebula"></div>
-    <div id = "Gamora"></div>
+        <section class="is-flex is-justify-content-center is-flex-wrap-wrap">
+        <!-- Hero 1 -->
+            <div class="div_heroes" id = "Spider-Man">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 2 -->
+            <div class="div_heroes" id = "Thor">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 3 -->
+            <div class="div_heroes" id = "Iron-Man">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 4 -->
+            <div class="div_heroes" id = "Hulk">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 5 -->
+            <div class="div_heroes" id = "Captain-America">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 6 -->
+            <div class="div_heroes" id = "Hawkeye">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 7 -->
+            <div class="div_heroes" id = "Captain-Marvel">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 8 -->
+            <div class="div_heroes" id = "Doctor-Strange">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 9 -->
+            <div class="div_heroes" id = "Black-Panther">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 10 -->
+            <div class="div_heroes" id = "Black-Widow">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 11 -->
+            <div class="div_heroes" id = "Winter-Soldier">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 12 -->
+            <div class="div_heroes" id = "Vision">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 13 -->
+            <div class="div_heroes" id = "Ant-Man">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 14 -->
+            <div class="div_heroes" id = "Scarlet-Witch">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 15 -->
+            <div class="div_heroes" id = "Wasp">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 16 -->
+            <div class="div_heroes" id = "Falcon">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 17 -->
+            <div class="div_heroes" id = "Loki">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 18 -->
+            <div class="div_heroes" id = "Thanos">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 19 -->
+            <div class="div_heroes" id = "Ultron">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 20 -->
+            <div class="div_heroes" id = "Groot">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 21 -->
+            <div class="div_heroes" id = "Drax">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 22 -->
+            <div class="div_heroes" id = "Star-Lord">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 23 -->
+            <div class="div_heroes" id = "War-Machine">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 24 -->
+            <div class="div_heroes" id = "Nebula">
+                <img>
+                <div></div>
+            </div>
+
+        <!-- Hero 25 -->
+            <div class="div_heroes" id = "Gamora">
+                <img>
+                <div></div>
+            </div>
+        </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src = "assets/js/script.js"></script>

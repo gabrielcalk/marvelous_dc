@@ -1,8 +1,33 @@
-main {
-    background: url(/assets/images/background_image.jpg);
-    background-repeat: no-repeat;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h3 {
-    margin-bottom: auto;
+
+body {
+    /* background-image:url(../images/background_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+main{
+    margin-top: 40px;
+    padding: 0 25px 0 25px;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+main div {
+    border: 2px solid black;
+}
+
+.div_heroes{
+    width: 225px;
+    height: 300px;
+    display: inline-block;
+    margin: 45px;
 }
