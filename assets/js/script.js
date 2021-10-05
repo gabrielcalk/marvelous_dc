@@ -150,6 +150,7 @@ fetch('https://superheroapi.com/api.php/2230409767102235/620/powerstats')
       
 array_heroes.push(data)})
 
+
 //super hero api iron man powerstats fetch
 fetch('https://superheroapi.com/api.php/2230409767102235/346/powerstats') 
 .then(function (response){if (!response.ok) {alert('API error');}
@@ -318,3 +319,159 @@ fetch('https://superheroapi.com/api.php/2230409767102235/487/powerstats')
   }).then(function (data){
       
 array_heroes.push(data)})
+=======
+//spider-man powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/620/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+fetch('https://superheroapi.com/api.php/2230409767102235/346/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//super hero api iron man powerstats fetch
+fetch('https://superheroapi.com/api.php/2230409767102235/346/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//Ant Man powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/30/powerstats') 
+        .then(function (response){if (!response.ok) {alert('API error');}
+              return response.json();
+            }).then(function (data){
+                console.log(data)})
+//black widow powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/107/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//black panther powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/106/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//captain america powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/149/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//captain marvel powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/156/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//wintersoldier powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/714/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//wasp powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/708/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//scarlet witch aka wanda maximoff
+fetch('https://superheroapi.com/api.php/2230409767102235/579/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//gamora powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/275/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//doctor strange powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/226/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//Drax powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/234/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//thor powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/659/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//hulk powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/332/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//Star Lord powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/630/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//hawkey powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/313/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//vision powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/697/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//thanos powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/655/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//War Machine powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/703/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//loki powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/414/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//falcon powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/251/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//ultron powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/680/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//groot powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/303/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
+//nebula powerstats
+fetch('https://superheroapi.com/api.php/2230409767102235/487/powerstats') 
+.then(function (response){if (!response.ok) {alert('API error');}
+      return response.json();
+    }).then(function (data){
+        console.log(data)})
