@@ -1,3 +1,4 @@
-main {
-    background: url(https://files.slack.com/files-pri/T02CQKD0UTY-F02H32N1MCH/background_image.jpg#);
+#main {
+    background: url(/assets/images/background_image.jpg);
+    background-repeat: no-repeat;
 }
