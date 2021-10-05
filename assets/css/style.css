@@ -2,3 +2,7 @@ main {
     background: url(/assets/images/background_image.jpg);
     background-repeat: no-repeat;
 }
+
+h3 {
+    margin-bottom: auto;
+}
