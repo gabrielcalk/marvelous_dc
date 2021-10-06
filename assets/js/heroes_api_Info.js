@@ -9,10 +9,13 @@ superheroToken = "1408209922908916"
 //access token
 superheroURL = "https://superheroapi.com/api/1408209922908916"
 
-//array for marvel 
+//array for marvel (15 heroes)
 characterArray = ["Spider-Man",  "Thor",  "Iron Man", "Hulk", "Captain America", "Hawkeye", "Captain Marvel", "Doctor Strange", "Black Panther", "Black Widow", "Winter Soldier", "Vision", "Ant-Man", "Scarlet Witch",  "Wasp", "Falcon", "Loki", "Thanos", "Ultron", "Groot", "Drax", "star lord", "War Machine", "Nebula", "Gamora"]
 
+//array for superhero api "powerstats" is keyword (25 heroes)
+characterArraysuper = ["Spider-man", "Thor", "Gamora", "Iron Man", "Ultron", "Groot", "Falcon", "Scarlet Witch", "Ant-Man", "Black Panther", "Thanos", "Star-Lord", "Hulk", "Captain America", "Loki"]
 
+array_heroes = [];
 
 //following are notes to the id of the character and path to thumbnail
 
@@ -30,8 +33,3 @@ characterArray = ["Spider-Man",  "Thor",  "Iron Man", "Hulk", "Captain America",
 
 //Hulk id: 1009351 {path: 'http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0', extension: 'jpg'} has description
 
-
-
-//array for superhero api "powerstats" is keyword
-
-characterArraysuper = ["spider-man", "thor", "ironman", "hulk", "captain america", "hawkeye", "captain marvel", "doctor strange", "black panther", "black widow", "winter soldier", "vision", "ant-man", "scarlet witch", "wasp", "falcon", "loki", "thanos", "ultron", "groot", "drax", "star-lord", "war machine", "nebula", "gamora"]
