@@ -2,7 +2,8 @@
     margin:0;
 }
 
-#main {
+
+main {
     background: url(/assets/images/background_image.jpg);
     background-repeat: no-repeat;
 }
@@ -53,4 +54,8 @@ body {
 .button:active {
     background-color: #8b0000;
     box-shadow: 0 5px #666;
+}
+    
+h3 {
+    margin-bottom: auto;
 }
