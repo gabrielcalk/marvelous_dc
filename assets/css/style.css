@@ -1,5 +1,7 @@
 * {
-    margin:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -13,6 +15,46 @@ html {
 
 body {
     width: 100%;
+}
+
+main{
+    padding: 0 25px 0 25px;
+}
+
+ul{
+    margin-bottom: 50px;
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+h1 {
+    color:white;
+    font-size: 35px;
+    text-align: center;
+}
+
+h2 {
+    background-color: #ED1D24;
+    color: white;
+}
+
+h3 {
+    margin-bottom: auto;
+}
+
+img {
+    height: 272px;
+    width: 221px;
+
+}
+
+p{
+    position: absolute;
+    left: 25px;
+    z-index: 99;
 }
 
 .hero {
@@ -41,84 +83,79 @@ body {
 }
 
 .button {
-	box-shadow:inset 0px 1px 0px 0px #f5978e;
-	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
-	background-color:#f24537;
-	border-radius:3px;
-	border:1px solid #d02718;
-	display:inline-block;
-	color:#ffffff;
-	font-family:'Marvel', sans-serif;
-	font-size:16px;
-	padding:12px 33px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #810e05;
+    font-family: 'Marvel', sans-serif;
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ff0000;
+    color:white;
+    
 }
+
 .button:hover {
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
-	background-color:#c62d1f;
+    background-color: #8b0000
 }
+
 .button:active {
-	position:relative;
-	top:1px;
+    background-color: #8b0000;
+    box-shadow: 0 5px #666;
 }
 
-h1 {
-    color:white;
-}
-
-h2 {
-    color:white;
-}
-
-h3 {
-    margin-bottom: auto;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    /* background-image:url(../images/background_image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
-}
-
-main{
-    padding: 0 25px 0 25px;
-}
-
-h1{
-    font-size: 35px;
-    text-align: center;
-}
-
-ul{
-    margin-bottom: 50px;
-}
-
-.div_heroes{
+.heroes{
     width: 225px;
     height: 300px;
     display: inline-block;
     margin: 45px;
     border: 2px solid black;
-    background-color: rgb(138, 137, 137);
+    background-image: url(../images/Super_Hero_Pictures/Charcter\ background\ 2.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero_name{
     border-bottom: 2px solid black;
     text-align: center;
     font-size: 15px;
+    background-color: #ED1D24;
+    color: white;
 }
 
 .hide{
     display: none;
 }
 
+
 .hero_selected{
     background-color: black;
+}
+
+.description{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 99;
+    font-size: 13px;
+    color: black    ;
+}
+
+.flipper{
+    transition: transform 1.4s;
+	transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back{
+	position: absolute;
+    cursor: pointer;
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+.heroes:hover .flipper{
+	transform: rotateY(180deg);
 }
