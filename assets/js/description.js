@@ -101,6 +101,6 @@ var extraheroes = [
 },
 {
     character:"Captain Marvel",
-    description:"Carol Danvers recieved her powers from a close blast of power from the space stone. She is among the most powerful in the MCU."
+    description:"Carol Danvers recieved her powers from a close blast of power from the space stone. She is among the"
 }
 ]
