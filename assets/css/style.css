@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin:0;
 }
@@ -58,4 +59,53 @@ body {
     
 h3 {
     margin-bottom: auto;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* background-image:url(../images/background_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+main{
+    padding: 0 25px 0 25px;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+ul{
+    margin-bottom: 50px;
+}
+
+.div_heroes{
+    width: 225px;
+    height: 300px;
+    display: inline-block;
+    margin: 45px;
+    border: 2px solid black;
+    background-color: rgb(138, 137, 137);
+}
+
+.hero_name{
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hide{
+    display: none;
+}
+
+.hero_selected{
+    background-color: black;
+>>>>>>> ff2d3270eee37479e7fe3893c26352ced02133c6
 }
