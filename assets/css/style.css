@@ -132,30 +132,3 @@ p{
     background-color: black;
 }
 
-.description{
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    z-index: 99;
-    font-size: 13px;
-    color: black    ;
-}
-
-.flipper{
-    transition: transform 1.4s;
-	transform-style: preserve-3d;
-    position: relative;
-}
-
-.front, .back{
-	position: absolute;
-    cursor: pointer;
-}
-
-.back{
-	transform: rotateY(180deg);
-}
-
-.heroes:hover .flipper{
-	transform: rotateY(180deg);
-}
