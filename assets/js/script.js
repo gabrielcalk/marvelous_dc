@@ -33,6 +33,6 @@ characterArray = ["Spider-Man",  "Thor",  "Iron Man", "Hulk", "Captain America",
 
 
 //array for superhero api "powerstats" is keyword
-characterArraysuper = ["spider-man", "thor", "ironman", "hulk", "captain america", "hawkeye", "captain marvel", "doctor strange", "black panther", "black widow", "winter soldier", "vision", "ant-man", "scarlet witch", "wasp", "falcon", "loki", "thanos", "ultron", "groot", "drax", "star-lord", "war machine", "nebula", "gamora"]
 
+characterArraysuper = ["spider-man", "thor", "ironman", "hulk", "captain america", "hawkeye", "captain marvel", "doctor strange", "black panther", "black widow", "winter soldier", "vision", "ant-man", "scarlet witch", "wasp", "falcon", "loki", "thanos", "ultron", "groot", "drax", "star-lord", "war machine", "nebula", "gamora"]
 
