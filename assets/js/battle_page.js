@@ -4,9 +4,12 @@ var div_heroes = document.querySelectorAll('.div_heroes')
 var options = document.querySelector('#options')
 var ul_heros = document.querySelector('#heroes_chosen')
 
-var options_number = 5;
-var heros_team = [];
+var options_number = 3;
+var heros_api = [];
+var enemy_array = [];
 
+var enemy_test = [];
+var array_heros = []; 
 
 put_name();
 
@@ -25,48 +28,83 @@ function get_hero(e){
     e.target.classList.add('hero_selected') 
 
     var hero_chosen = e.target.getAttribute("data-hero");
-    heros_team.push(hero_chosen)
-
+    array_heros.push(hero_chosen)
     var li_heros = document.createElement('li')
     li_heros.textContent = hero_chosen
     ul_heros.append(li_heros)
+
+    var api_hero = 'https://www.superheroapi.com/api.php/2230409767102235/search/'+hero_chosen
+
+    fetch(api_hero) 
+    .then(function (response){
+        return response.json();
+    })
+    .then(function (data){
+        heros_api.push(data);
+    })
 
     options_number --;
 
     if (options_number == 1){
         options.textContent = options_number + ' Hero'
+    } else if (options_number == 0){ 
+        options.textContent = 'You are ready to play!';
+        start_game.classList.remove('hide');
+        select_enemy_team();
+        for (i = 0; i < characterArraysuper.length; i++){
+            div_heroes[i].removeEventListener('click', get_hero)
+        }
 
-    }   else if (options_number == 0){ 
-            options.textContent = 'You are ready to play!';
-            start_game.classList.remove('hide');
-            for (i = 0; i < characterArraysuper.length; i++){
-                div_heroes[i].removeEventListener('click', get_hero)
-            }
-
-        }   else {
-            options.textContent = options_number + ' Heroes'
-            }
+    } else {
+        options.textContent = options_number + ' Heroes'
+    }
 }
 
+function select_enemy_team() {
+    for (i = 0; i < 3; i++){
+        var hero_enemy = characterArraysuper[Math.floor(Math.random() * characterArraysuper.length)];
+
+// if computer hero is equal than user hero, then do the random again
+// from: https://forum.freecodecamp.org/t/how-to-make-math-random-not-repeat-same-numbers/417973/2
+
+        if (array_heros.includes(hero_enemy)){
+            select_enemy_team();
+        } else{
+            enemy_test.push(hero_enemy)
+            var api_enemy = 'https://www.superheroapi.com/api.php/2230409767102235/search/'+hero_enemy
+
+            fetch(api_enemy) 
+            .then(function (response){
+                return response.json();
+            })
+            .then(function (data){
+                enemy_array.push(data);
+            })
+        }
+    }
+}
 
 function start_battle() {
     if ( options_number >= 1 ){
-        alert('Choose 5 heroes')
+        alert('Choose 3 heroes')
     }
         location.href= 'marvel.html';
+        localStorage.setItem("user_heroes", JSON.stringify(heros_api));
+        localStorage.setItem("enemy_heroes", JSON.stringify(enemy_array));
 }
 
 start_game.addEventListener('click', start_battle)
 
 // Add the heroes description on the div
 
-// Add the heroes picture on the div (probably using html)
+// Add the heroes images
 
-//Set attribute on the heroes DIV and add a select class(click)
+// Don't choose the hero 2 times (enemy)
 
-//Set Attribute on the button that start the battle (starting the battle function)
+// Don't allow the user click on the div that contains the name of the hero
 
-//battle function: go to the next page
+//Check why sometimes the enemy team choose more than 3
+
 
 
 
