@@ -1,13 +1,15 @@
-<<<<<<< HEAD
 * {
     margin:0;
 }
 
 
-main {
-    background: url(/assets/images/background_image.jpg);
-    background-repeat: no-repeat;
-}
+html { 
+    background: url(../images/background_image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 body {
     width: 100%;
@@ -56,10 +58,18 @@ body {
     background-color: #8b0000;
     box-shadow: 0 5px #666;
 }
-    
+
+h1 {
+    color:white;
+}
+
+h2 {
+    color:white;
+}
+
 h3 {
     margin-bottom: auto;
-=======
+}
 *{
     margin: 0;
     padding: 0;
@@ -107,5 +117,4 @@ ul{
 
 .hero_selected{
     background-color: black;
->>>>>>> ff2d3270eee37479e7fe3893c26352ced02133c6
 }
