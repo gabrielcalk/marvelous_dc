@@ -47,8 +47,7 @@ h3 {
 
 img {
     height: 272px;
-    width: 221px;
-
+    margin-top: 1px;
 }
 
 p{
@@ -57,9 +56,10 @@ p{
     z-index: 99;
 }
 
-.hero {
-    background-image: url(../images/background_image.jpg);
-    height: 100%;
+.div_heroes {
+    background-image: url(../images/Super_Hero_Pictures/Charcter\ Background.png);
+    height: 273px;
+    width: 222px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,9 +110,6 @@ p{
     display: inline-block;
     margin: 45px;
     border: 2px solid black;
-    background-image: url(../images/Super_Hero_Pictures/Charcter\ background\ 2.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .hero_name{
@@ -132,3 +129,30 @@ p{
     background-color: black;
 }
 
+.description{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 99;
+    font-size: 13px;
+    color: black    ;
+}
+
+.flipper{
+    transition: transform 1.3s;
+	transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back{
+	position: absolute;
+    cursor: pointer;
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+.heroes:hover .flipper{
+	transform: rotateY(180deg);
+}
