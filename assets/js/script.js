@@ -319,7 +319,6 @@ fetch('https://superheroapi.com/api.php/2230409767102235/487/powerstats')
   }).then(function (data){
       
 array_heroes.push(data)})
-=======
 //spider-man powerstats
 fetch('https://superheroapi.com/api.php/2230409767102235/620/powerstats') 
 .then(function (response){if (!response.ok) {alert('API error');}
