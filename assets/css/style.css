@@ -1,5 +1,7 @@
 * {
-    margin:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -13,6 +15,46 @@ html {
 
 body {
     width: 100%;
+}
+
+main{
+    padding: 0 25px 0 25px;
+}
+
+ul{
+    margin-bottom: 50px;
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+h1 {
+    color:white;
+    font-size: 35px;
+    text-align: center;
+}
+
+h2 {
+    background-color: #ED1D24;
+    color: white;
+}
+
+h3 {
+    margin-bottom: auto;
+}
+
+img {
+    height: 272px;
+    width: 221px;
+
+}
+
+p{
+    position: absolute;
+    left: 25px;
+    z-index: 99;
 }
 
 .hero {
@@ -41,174 +83,52 @@ body {
 }
 
 .button {
-	box-shadow:inset 0px 1px 0px 0px #f5978e;
-	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
-	background-color:#f24537;
-	border-radius:3px;
-	border:1px solid #d02718;
-	display:inline-block;
-	color:#ffffff;
-	font-family:'Marvel', sans-serif;
-	font-size:16px;
-	padding:12px 33px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #810e05;
+    font-family: 'Marvel', sans-serif;
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ff0000;
+    color:white;
+    
 }
+
 .button:hover {
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
-	background-color:#c62d1f;
+    background-color: #8b0000
 }
+
 .button:active {
-	position:relative;
-	top:1px;
+    background-color: #8b0000;
+    box-shadow: 0 5px #666;
 }
 
-h1 {
-    color:white;
-}
-
-h2 {
-    color:white;
-}
-
-h3 {
-    margin-bottom: auto;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    /* background-image:url(../images/background_image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
-}
-
-main{
-    padding: 0 25px 0 25px;
-}
-
-h1{
-    font-size: 35px;
-    text-align: center;
-}
-
-ul{
-    margin-bottom: 50px;
-}
-
-.div_heroes{
+.heroes{
     width: 225px;
     height: 300px;
     display: inline-block;
     margin: 45px;
     border: 2px solid black;
-    background-color: rgb(138, 137, 137);
+    background-image: url(../images/Super_Hero_Pictures/Charcter\ background\ 2.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero_name{
     border-bottom: 2px solid black;
     text-align: center;
     font-size: 15px;
+    background-color: #ED1D24;
+    color: white;
 }
 
 .hide{
     display: none;
 }
 
+
 .hero_selected{
     background-color: black;
 }
 
-html, body {
-    
-    height: 100%;
-  }
-  
-  .container {
-    width:100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .circle {
-    border-radius: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border:1px solid #000;
-  }
-  
-  .outer-lv3 {
-    background-image: linear-gradient(#870000,#FF4040,#870000);
-    height: 260px;
-    width: 260px;
-    -webkit-animation: turning 8s infinite linear;
-    animation: turning 8s infinite linear;
-  }
-  
-  @-webkit-keyframes turning {
-      0%   {transform: rotate(0deg)}
-      100% {transform: rotate(360deg)}
-  }
-  
-  @keyframes turning {
-      0%   {transform: rotate(0deg)}
-      100% {transform: rotate(360deg)}
-  }
-  
-  .outer-lv2 {
-    background: #fff;
-    background-image: linear-gradient(#DBD9D9,#FAFAFA,#DBD9D9);
-    height: 210px;
-    width: 210px;
-  }
-  
-  .outer-lv1 {
-    background-image: linear-gradient(#870000,#FF4040,#870000);
-    height: 150px;
-    width: 150px;
-  }
-  
-  .center {
-    background-image: linear-gradient(#0846A8,#277AFF,#0846A8);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border:1px solid #000;
-  }
-  
-  .arrow {
-    border-top: 35px solid #EDE8E8;
-    border-bottom: 48px solid rgba(0,0,0,0.0);
-    border-left: 48px solid transparent;
-    border-right: 48px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-  }
-  
-  .top {
-    top: 35px;
-    left: 2px;
-  }
-  
-  .left {
-    transform: rotate(72deg);
-    top: 16px;
-    left: -24px;
-  }
-  
-  .right {
-    transform: rotate(-72deg);
-    top: 16px;
-    left: 25px;
-  }
