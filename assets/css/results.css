@@ -6,13 +6,17 @@
     font-weight: bold;
 }
 
-
 html { 
     background: url(../images/background_image.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+img {
+    width: 180px;
+    height: 180px;
 }
 
 .div_results{
