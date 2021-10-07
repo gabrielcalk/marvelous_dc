@@ -4,30 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvelous Battles</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marvel&display=swap">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Marvel Loading</title>
+    <style>
+        body {
+    text-align: center;
+    background-color: black;
+  }
+  #colored {
+    position: relative;
+    top:40vh;
+    left:50px;
+    clip-path:polygon(0 0,0.01% 0,0.01% 100%,0 100%);
+  }
+  .img-container {
+    position: relative;
+    width: 600px;
+    margin:auto;
+  }
+    </style>
 </head>
 <body>
-    <main>
-        <section>
-        <div class="hero-body">
-            <div class="container has-text-centered">
-              <h1 class="title is-1">
-                Marvelous 
-              </h1>
-              <h1 class="title is-1">
-                Battle
-              </h1>
-              <button onclick="window.location.href='battles.html';" class="button is-medium">Start Game</button>
-            </div>
-          </div>
-        </section>
-    </main> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
-    <script src="assets/js/description.js"></script>
+    <div class="img-container">
+    <img id="colored" src="http://preview.ibb.co/fhn2BG/marvel.jpg" width="200">
+    </div>
+    <script>
+      var color=document.getElementById('colored');
+      var x;
+      window.addEventListener('load',function(){setTimeout(function(){doFirst(0);},500)},false);
+      function doFirst(x){
+        if(x==0)
+        {
+          color.style.clipPath="polygon(0 0,100% 0,100% 100%,0 100%)";
+          color.style.transition="clip-path .8s";
+          setTimeout(function(){
+            color.style.clipPath="polygon(99.99% 0,100% 0,100% 100%,99.99% 100%)";
+            color.style.transition="clip-path .8s";
+          },900);
+          x=99.99;
+        }
+        else {
+          color.style.clipPath="polygon(0 0,100% 0,100% 100%,0 100%)";
+          color.style.transition="clip-path .8s";
+          setTimeout(function(){
+            color.style.clipPath="polygon(0 0,0.01% 0,0.01% 100%,0 100%)";
+            color.style.transition="clip-path .8s";
+          },900);
+          x=0;
+        }
+        setTimeout(function(){doFirst(x);},1900);}
+       
+        setTimeout(function(){
+            window.location.href ="start-game.html";
+         }, 5000);
+    </script>
 </body>
 </html>
