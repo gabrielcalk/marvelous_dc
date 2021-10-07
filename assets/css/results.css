@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+
+html { 
+    background: url(../images/background_image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.div_results{
+    margin-top: 150px;
+}
+
+.marvel_color{
+    background-color: #ED1D24;
+}
+
+.score {
+    border: 8px solid #ED1D24;
+    border-radius: 5px;
+    padding: 35px;
+}
