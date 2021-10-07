@@ -105,6 +105,6 @@ var extraheroes = [
 }
 ]
 
-fetch("https://superhero-quotes.herokuapp.com/grab?banner=mcu")
+fetch("https://cors-anywhere.herokuapp.com/https://superhero-quotes.herokuapp.com/grab?banner=mcu")
   .then(response => response.json())
   .then(data => console.log(data));
