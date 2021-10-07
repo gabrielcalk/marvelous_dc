@@ -1,6 +1,9 @@
 const heroes_user = JSON.parse(localStorage.getItem('user_heroes'));
 const enemy_user = JSON.parse(localStorage.getItem('enemy_heroes'));
 
+let user_score_var = JSON.parse(localStorage.getItem("user_score"));
+let opponent_score_var = JSON.parse(localStorage.getItem("opponent_score"));
+
 const heros_user_powers = [];
 const heros_computer_powers = [];
 
@@ -9,15 +12,14 @@ const lost_won = document.querySelector('#lost_won');
 const you = document.querySelector('#you');
 const opponent = document.querySelector('#opponent')
 const hero_image = document.querySelectorAll('.hero_image')
+const reset_score = document.querySelector('#reset_score')
 
 let sum_user = 0;
 let sum_computer = 0;
 
-let user_score = 0;
-let opponent_score = 0;
-
 get_powers()
 function get_powers(){
+
     for (i = 0; i < heroes_user.length; i++){
         var combat_heroes_user = heroes_user[i].results[0].powerstats.combat
         var durability_heroes_user = heroes_user[i].results[0].powerstats.durability
@@ -58,21 +60,22 @@ function user(user){
 
 function show_results() {
     if (sum_computer > sum_user){
-        opponent_score ++;
+        opponent_score_var ++;
         results_title.textContent = 'You Got Smashed!!!!'
         lost_won.textContent = 'You Lose By: ' + (sum_computer-sum_user) + ' points';
-        you.textContent = 'You: ' + user_score;
-        opponent.textContent = 'Computer: ' + opponent_score;
+        you.textContent = 'You: ' + user_score_var;
+        opponent.textContent = 'Computer: ' + opponent_score_var;
+        
         for (i = 0; i < 3; i++){
             hero_image[i].setAttribute('src', enemy_user[i].results[0].image.url)
         }
     } 
     else if (sum_user > sum_computer){
-        user_score ++;
+        user_score_var ++;
         results_title.textContent = 'You Smashed The Computer Team!!!!'
         lost_won.textContent = 'You Won By: ' + (sum_user-sum_computer) + ' points';
-        you.textContent = 'You: ' + user_score;
-        opponent.textContent = 'Computer: ' + opponent_score;
+        you.textContent = 'You: ' + user_score_var;
+        opponent.textContent = 'Computer: ' + opponent_score_var;
 
         for (i = 0; i < 3; i++){
             hero_image[i].setAttribute('src', heroes_user[i].results[0].image.url)
@@ -81,8 +84,8 @@ function show_results() {
     else{
         results_title.textContent = 'How is that possible!!!!'
         lost_won.textContent = 'It is a TIE!!!!';
-        you.textContent = 'You: ' + user_score;
-        opponent.textContent = 'Computer: ' + opponent_score;
+        you.textContent = 'You: ' + user_score_var;
+        opponent.textContent = 'Computer: ' + opponent_score_var;
     }
 
     if (heroes_user[0].results[0].name === 'Lex Luthor'){
@@ -94,3 +97,15 @@ function show_results() {
     } 
     
 }   
+
+function reset() {
+    localStorage.setItem("user_score", 0);
+    localStorage.setItem("opponent_score", 0);
+    you.textContent = 'You: ' + 0;
+    opponent.textContent = 'Computer: ' + 0;
+}
+
+localStorage.setItem("user_score", JSON.stringify(user_score_var));
+localStorage.setItem("opponent_score", JSON.stringify(opponent_score_var));
+
+reset_score.addEventListener('click', reset)
