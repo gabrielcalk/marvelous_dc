@@ -1,3 +1,5 @@
+var characterArraysuper = ["Spider-man", "Thor", "Gamora", "Iron Man", "Ultron", "Groot", "Falcon", "Scarlet Witch", "Ant-Man", "Black Panther", "Thanos", "Star-Lord", "Hulk", "Captain America", "Loki"]
+
 var heroPowers = [
     {    
         character: "Spider-Man",

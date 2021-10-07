@@ -49,20 +49,20 @@ function get_hero(e){
 // Taking out the description, image description and the hero image and adding one select hero image that tells the user that his hero was chosen
 if (e.target.tagName.toLowerCase() === 'p'){
     e.target.parentElement.children[1].textContent = ' '
-    e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
-    e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+    e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', '../assets/images//Super_Hero_Pictures/Selected.png');
+    e.target.parentElement.children[0].setAttribute('src', '../assets/images//Super_Hero_Pictures/Selected.png');
 }
 
 if (e.target.tagName.toLowerCase() === 'img'){
     e.target.parentElement.children[1].textContent = ' '
-    e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
-    e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+    e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', '../assets/images//Super_Hero_Pictures/Selected.png');
+    e.target.parentElement.children[0].setAttribute('src', '../assets/images//Super_Hero_Pictures/Selected.png');
 }
 
 if (e.target.tagName.toLowerCase() === 'div'){
     e.target.children[1].children[1].textContent = ' '
-    e.target.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
-    e.target.children[1].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+    e.target.children[0].children[0].setAttribute('src', '../assets/images//Super_Hero_Pictures/Selected.png');
+    e.target.children[1].children[0].setAttribute('src', '../assets/images//Super_Hero_Pictures/Selected.png');
 }
 
 
@@ -164,6 +164,3 @@ function start_battle() {
 
 // Adding one event on the button that let the user start the battle
 start_game.addEventListener('click', start_battle);
-
-
-console.log(array_enemies_full)
