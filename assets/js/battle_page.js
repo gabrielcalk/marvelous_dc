@@ -146,7 +146,7 @@ function start_battle() {
         alert('Choose 3 heroes')
     }
 // When the user click to start the battle, then move him/her to the next page and save the enemy and user teams on the local storage
-        location.href= 'animations.html';
+        location.href= 'marvel.html';
         localStorage.setItem("user_heroes", JSON.stringify(heros_api));
         localStorage.setItem("enemy_heroes", JSON.stringify( enemy_array_api));
 }
