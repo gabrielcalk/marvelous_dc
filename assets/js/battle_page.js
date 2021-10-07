@@ -1,4 +1,3 @@
-
 // getting the start button from the HTML
 var start_game = document.querySelector('#start_game')
 
@@ -14,7 +13,6 @@ var image_hero = document.querySelectorAll('.image-hero')
 // Getting the options id form the HTML (how mony picks the user have)
 var options = document.querySelector('#options')
 
-
 // Setting that the user can only choose 3 heroes
 var options_number = 3;
 
@@ -23,7 +21,6 @@ var heros_api = [];
 var enemy_array_api = [];
 
 // Array with the heroes and enemies names
-var array_enemies_full = [];
 var array_heros = []; 
 
 // Calling the put name function
@@ -46,14 +43,28 @@ function put_name(){
     }
 }
 
-
 // GET HERO function
 function get_hero(e){
 
 // Taking out the description, image description and the hero image and adding one select hero image that tells the user that his hero was chosen
-e.target.parentElement.children[1].textContent = ' '
-e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
-e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+if (e.target.tagName.toLowerCase() === 'p'){
+    e.target.parentElement.children[1].textContent = ' '
+    e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+    e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+}
+
+if (e.target.tagName.toLowerCase() === 'img'){
+    e.target.parentElement.children[1].textContent = ' '
+    e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+    e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+}
+
+if (e.target.tagName.toLowerCase() === 'div'){
+    e.target.children[1].children[1].textContent = ' '
+    e.target.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+    e.target.children[1].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
+}
+
 
 // Information from StackOverFlow: https://stackoverflow.com/questions/37929825/how-to-access-data-attributes-from-event-object
 // Making sure that we will grab the data-hero from the hero that was clicked. With this data, we are going to get the informations about that hero
@@ -67,9 +78,9 @@ e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero
     array_heros.push(hero_chosen)
 
 // Putting the hero name that was chosen on the page
-    var li_heros = document.createElement('li')
-    li_heros.textContent = hero_chosen
-    ul_heros.append(li_heros)
+    var li_heros = document.createElement('li');
+    li_heros.textContent = hero_chosen;
+    ul_heros.append(li_heros);
 
 // Setting the API in a variable
     var api_hero = 'https://www.superheroapi.com/api.php/2230409767102235/search/'+hero_chosen
@@ -89,12 +100,12 @@ e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero
 // if the user options is equal 1, then take out the 'es' from the heroes and change to 'hero'
     if (options_number == 1){
         options.textContent = options_number + ' Hero'
-
+    }
 // If the user options is equal 0, then say that he/she is ready to play, show the button and start the enemy team function that will select the enemy team
-    } else if (options_number == 0){ 
+    if (options_number == 0){
+        select_enemy_team();
         options.textContent = 'You are ready to play!';
         start_game.classList.remove('hide');
-        select_enemy_team();
 
 // If the options to choose the heroes is 0, then remove the event listeners from the heroes, that mean the user cannot choose anymore heroes
         for (i = 0; i < characterArraysuper.length; i++){
@@ -104,57 +115,55 @@ e.target.parentElement.children[0].setAttribute('src', 'assets/images/Super_Hero
 // if the options that the user has to pick heroes is more than one, then put how much options he/she was and add the word 'heroes' after
     } else {
         options.textContent = options_number + ' Heroes'
-    }
-    e.target.parentElement.parentElement.removeEventListener('click', get_hero)
-    e.target.removeEventListener('click', get_hero)
+        }
+    e.target.parentElement.parentElement.removeEventListener('click', get_hero);
+    e.target.removeEventListener('click', get_hero);
 }
 
 // Function that select the enemy team
-function select_enemy_team() {
+var array_enemies_full = [];
 
+function select_enemy_team() {
 // Defining that the enemy team has only 3 heroes
     for (i = 0; i < 3; i++){
-        var hero_enemy = characterArraysuper[Math.floor(Math.random() * (characterArraysuper.length))];
+        select_random()
+
+// Function that will pick the enemy team randomly
+        function select_random() {
+            var hero_enemy = characterArraysuper[Math.floor(Math.random() * 15)];
 
 // if the hero that was chosen randomly already has been chosen by the user or already have been add on the enemies team, then pick another hero
         if(array_enemies_full.includes(hero_enemy) || array_heros.includes(hero_enemy) ) {
-            return select_enemy_team();
+            return select_random();
         }   else {
-
 // if the hero is new, then push to an array
-            array_enemies_full.push(hero_enemy)
+            array_enemies_full.push(hero_enemy);
             }
-    }
-     
-// Grab the enemies team information from the superhero API
-        for (i = 0; i < 3; i++){
-            var api_enemy = 'https://www.superheroapi.com/api.php/2230409767102235/search/'+array_enemies_full.slice(0, 3)[i]
-
-            fetch(api_enemy) 
-            .then(function (response){
-                return response.json();
-            })
-            .then(function (data){
-                enemy_array_api.push(data);
-            })
         }
+    }
+
+// Grab the enemies team information from the superhero API
+    for (i = 0; i < 3; i++){ 
+        get_hero_api()
+        async function get_hero_api() {
+            var api_enemy = await fetch('https://www.superheroapi.com/api.php/2230409767102235/search/'+array_enemies_full.slice(0, 3)[i]);
+            let data = await api_enemy.json();
+            enemy_array_api.push(data);
+        }   
+    }
 }
 
 // Function that is call after the user click to start the battle
 function start_battle() {
-    if ( options_number >= 1 ){
-        alert('Choose 3 heroes')
-    }
+
 // When the user click to start the battle, then move him/her to the next page and save the enemy and user teams on the local storage
-        location.href= 'animations.html';
-        localStorage.setItem("user_heroes", JSON.stringify(heros_api));
-        localStorage.setItem("enemy_heroes", JSON.stringify( enemy_array_api));
+    location.href= 'animations.html';
+    localStorage.setItem("user_heroes", JSON.stringify(heros_api));
+    localStorage.setItem("enemy_heroes", JSON.stringify( enemy_array_api));
 }
 
 // Adding one event on the button that let the user start the battle
-start_game.addEventListener('click', start_battle)
+start_game.addEventListener('click', start_battle);
 
 
-
-
-
+console.log(array_enemies_full)
