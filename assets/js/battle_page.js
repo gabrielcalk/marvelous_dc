@@ -1,5 +1,10 @@
 var start_game = document.querySelector('#start_game')
+
 var hero_name = document.querySelectorAll('.hero_name')
+var description = document.querySelectorAll('.description')
+var image_hero = document.querySelectorAll('.image-hero')
+
+
 var div_heroes = document.querySelectorAll('.div_heroes')
 var options = document.querySelector('#options')
 var ul_heros = document.querySelector('#heroes_chosen')
@@ -15,19 +20,27 @@ put_name();
 
 function put_name(){
     options.textContent = options_number + ' Heroes'
-    for (i = 0; i < characterArraysuper.length; i++){
-        hero_name[i].textContent = characterArraysuper[i].toUpperCase()
-        div_heroes[i].setAttribute('data-hero', characterArraysuper[i])
-        div_heroes[i].addEventListener('click', get_hero)
+    for (i = 0; i < heroPowers.length; i++){
+        hero_name[i].textContent = heroPowers[i].character.toUpperCase();
+        description[i].textContent = heroPowers[i].description;
+        div_heroes[i].setAttribute('data-hero', characterArraysuper[i]);
+        div_heroes[i].addEventListener('click', get_hero);
+        // description[i].textContent = heroPowers[i].description
     }
 }
 
 function get_hero(e){
     e.preventDefault();
 // Information from StackOverFlow: https://stackoverflow.com/questions/37929825/how-to-access-data-attributes-from-event-object
-    e.target.classList.add('hero_selected') 
+    var hero_chosen = e.target.parentElement.parentElement.getAttribute("data-hero");
 
-    var hero_chosen = e.target.getAttribute("data-hero");
+    if (hero_chosen === null){
+        hero_chosen = e.target.getAttribute("data-hero");
+    }
+
+    console.log(hero_chosen)
+    console.log(e.target)
+
     array_heros.push(hero_chosen)
     var li_heros = document.createElement('li')
     li_heros.textContent = hero_chosen
@@ -58,6 +71,7 @@ function get_hero(e){
     } else {
         options.textContent = options_number + ' Heroes'
     }
+    e.target.parentElement.parentElement.children[0].children[0].setAttribute('src', 'assets/images/Super_Hero_Pictures/Selected.png');
 }
 
 function select_enemy_team() {
@@ -104,8 +118,6 @@ start_game.addEventListener('click', start_battle)
 // Don't allow the user click on the div that contains the name of the hero
 
 //Check why sometimes the enemy team choose more than 3
-
->>>>>>> ff2d3270eee37479e7fe3893c26352ced02133c6
 
 
 
