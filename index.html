@@ -10,12 +10,22 @@
         body {
     text-align: center;
     background-color: black;
+    margin-left: 300px;
   }
+
+  #bnw {
+        position: absolute;
+        top:40vh;
+        
+        left:50px;
+  }
+
   #colored {
-    position: relative;
+    position: absolute;
     top:40vh;
     left:50px;
     clip-path:polygon(0 0,0.01% 0,0.01% 100%,0 100%);
+
   }
   .img-container {
     position: relative;
@@ -26,6 +36,7 @@
 </head>
 <body>
     <div class="img-container">
+    <img id="bnw" src="http://preview.ibb.co/kEMjQb/marvel.png" width="200">  
     <img id="colored" src="http://preview.ibb.co/fhn2BG/marvel.jpg" width="200">
     </div>
     <script>
