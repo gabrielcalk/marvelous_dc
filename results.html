@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/results.css">
+</head>
+<body>
+    <header>
+        <h1 class="title is-1 has-text-centered has-text-white mt-5" id="results_title">TEST</h1>
+    </header>
+    <main>
+        <div class="is-flex is-justify-content-space-around is-flex-wrap-wrap div_results">   
+            <section class="is-flex is-flex-direction-column is-align-items-center">
+                <div class="box has-background-black score">
+                    <h2 class="has-text-white marvel_color is-size-2" id="lost_won">You lost by X points</h2>
+                    <h3 class="has-text-white is-size-3	mt-5" id="you">You: 0</h3>
+                    <h3 class="has-text-white is-size-3	mt-5" id="opponent">Opponent: 1</h3>
+                </div>
+                <div>
+                    <a class="button marvel_color has-text-white is-rounded is-size-4 mb-5" href="start-game.html">Play Again</a>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="is-size-2 has-text-white">Winning <span class="marvel_color has-text-white">team</span></h2>
+                <img class="title is-3" id="hero1">
+                <img class="title is-3" id="hero2">
+                <img class="title is-3" id="hero3">
+            </section>
+        </div>
+        <section>
+            <div id="mcuQuotes"></div>
+        </section>
+    </main>
+    <script src="assets/js/description.js"></script>
+    <script src="assets/js/results.js"></script>
+</body>
+</html>
