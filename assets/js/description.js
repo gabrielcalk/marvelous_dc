@@ -104,3 +104,7 @@ var extraheroes = [
     description:"Carol Danvers recieved her powers from a close blast of power from the space stone. She is among the"
 }
 ]
+
+fetch("https://superhero-quotes.herokuapp.com/grab?banner=mcu")
+  .then(response => response.json())
+  .then(data => console.log(data));
