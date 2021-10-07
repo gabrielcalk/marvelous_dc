@@ -115,6 +115,14 @@ p{
     -8px 7px #cdd2d5;
 }
 
+.title_3 {
+    font-family: 'Marvel', sans-serif;
+}
+
+.heroes_chosen {
+    font-family: 'Marvel', sans-serif;
+}
+
 .hero-body {
     position: absolute;
     width: 100%;
@@ -154,6 +162,7 @@ p{
 .hero_name{
     border-bottom: 2px solid black;
     text-align: center;
+    font-family: 'Marvel', sans-serif;
     font-size: 15px;
     background-color: #ED1D24;
     color: white;
