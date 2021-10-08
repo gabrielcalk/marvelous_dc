@@ -108,12 +108,3 @@ var extraheroes = [
 ]
 //max pull request of 50 MCU quotes pulled at random author and quote are retrieved
 
-const marvelQuote = document.querySelector("#mcuQuotes")
-fetch("https://cors-anywhere.herokuapp.com/https://superhero-quotes.herokuapp.com/grab?banner=mcu&size=50")
-.then(function (response){
-if(!response.ok){
-    alert("API Error");
-}
-return response => response.json();
-})
-

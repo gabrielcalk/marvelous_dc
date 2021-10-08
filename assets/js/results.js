@@ -14,6 +14,8 @@ const opponent = document.querySelector('#opponent')
 const hero_image = document.querySelectorAll('.hero_image')
 const reset_score = document.querySelector('#reset_score')
 
+const marvelQuote = document.querySelector("#mcuQuotes")
+
 let sum_user = 0;
 let sum_computer = 0;
 
@@ -108,4 +110,30 @@ function reset() {
 localStorage.setItem("user_score", JSON.stringify(user_score_var));
 localStorage.setItem("opponent_score", JSON.stringify(opponent_score_var));
 
+fetch("https://cors-anywhere.herokuapp.com/https://superhero-quotes.herokuapp.com/grab?banner=mcu&size=50")
+.then(function (response){
+    if(!response.ok){
+        alert("API Error");
+    }
+        return response.json();
+})
+.then(function (data){
+    phrase(data);
+})
+
+function phrase(data){
+    var random_phrase = data.Items[Math.floor(Math.random() * data.Items.length)];
+    
+    var author = document.createElement('H4');
+    author.textContent = ' ' + random_phrase.data.author;
+    marvelQuote.append(author);
+    
+    var p_phrase = document.createElement('H3');
+    p_phrase.textContent = random_phrase.data.quote;
+    marvelQuote.append(p_phrase);
+}
+
+
+ 
 reset_score.addEventListener('click', reset)
+
