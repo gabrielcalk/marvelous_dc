@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battle Results</title>
+
+<!-- Adding marvel's font from google fonts, bulma frameword and the results.css file to the html -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap">
@@ -13,16 +15,20 @@
 </head>
 <body>
     <header>
-        <h1 class="title is-1 has-text-centered has-text-white mt-5" id="results_title">TEST</h1>
+        <h1 class="title is-1 has-text-centered has-text-white mt-5" id="results_title"></h1>
     </header>
     <main>
         <div class="is-flex is-justify-content-space-around is-flex-wrap-wrap div_results">   
             <section class="is-flex is-flex-direction-column is-align-items-center">
+
+<!-- Adding the div that show the computer and user's scores -->
                 <div class="box has-background-black score">
                     <h2 class="has-text-white marvel_color is-size-2" id="lost_won"></h2>
                     <h3 class="has-text-white is-size-3	mt-5" id="you"></h3>
                     <h3 class="has-text-white is-size-3	mt-5" id="opponent"></h3>
                 </div>
+
+<!-- Adding the button to play again and the button to reset scores -->
                 <div>
                     <a class="button marvel_color has-text-white is-rounded is-size-4 mb-5 mr-5" href="start-game.html">Play Again</a>
                     <a class="button marvel_color has-text-white is-rounded is-size-4 mb-5" id="reset_score">Reset Score</a>
@@ -30,18 +36,34 @@
             </section>
 
             <section>
+<!-- Adding the images from the team that won -->
                 <h2 class="is-size-2 has-text-white has-text-centered mb-5">Winning <span class="marvel_color has-text-white">Team</span></h2>
                 <div class='is-flex is-align-content-center is-flex-wrap-wrap'>
-                    <img class="title is-3 mr-5 hero_image">
-                    <img class="title is-3 mr-5 hero_image">
-                    <img class="title is-3 mr-5 hero_image">
+                    <img class="title is-3 mr-5 win_image">
+                    <img class="title is-3 mr-5 win_image">
+                    <img class="title is-3 mr-5 win_image">
+                </div>
+
+<!-- Adding the images from the team that lost -->
+                <h2 class="is-size-2 has-text-white has-text-centered mb-5">Losing <span class="marvel_color has-text-white">Team</span></h2>
+                <div class='is-flex is-align-content-center is-flex-wrap-wrap'>
+                    <img class="title is-3 mr-5 losing_image">
+                    <img class="title is-3 mr-5 losing_image">
+                    <img class="title is-3 mr-5 losing_image">
                 </div>
             </section>
         </div>
+<!-- Adding the quotes section to the html -->
         <section>
             <div class="is-size-3 has-text-white is-flex-wrap-wrap" id="mcuQuotes"></div>
         </section>
+
+<!-- Adding the div with the button that get another quote -->
+        <div class="is-flex is-justify-content-center">
+            <a id='another_quote' class="button marvel_color has-text-white is-rounded is-size-4 mb-5 mr-5 mt-6">Another Quote</a>
+        </div>
     </main>
+<!-- Adding the description.js file and the results.js file to the results.html -->
     <script src="../assets/js/description.js"></script>
     <script src="../assets/js/results.js"></script>
 </body>
