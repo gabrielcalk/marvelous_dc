@@ -12,8 +12,8 @@
     <audio id="myAudio">
         <source src="Avengers.mp3" type="audio/mpeg">
       </audio>
-      <p><button onclick="playAudio()" type="button">Play Audio</button>
-        <button onclick="pauseAudio()" type="button">Pause Audio</button></p>
+      <class><p><button onclick="playAudio()" type="button">Play</button>
+        <button onclick="pauseAudio()" type="button">Pause</button></p></class>
     <header>
         <h1>Choose Your Team</h1>
         <hr>
@@ -246,7 +246,7 @@
     </main>
     <script>
         var x = document.getElementById("myAudio"); 
-        
+        // Added play and pause button so you can stop the music whenever.
         function playAudio() { 
           x.play(); 
         } 
