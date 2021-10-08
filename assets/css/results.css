@@ -19,6 +19,10 @@ img {
     height: 180px;
 }
 
+h4{
+    color: #ED1D24;
+}
+
 .div_results{
     margin-top: 150px;
 }
@@ -32,3 +36,18 @@ img {
     border-radius: 5px;
     padding: 35px;
 }
+
+#mcuQuotes{
+    margin-top: 100px;
+    text-align: center;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #mcuQuotes {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
