@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/* Background image displayed on all htmls */
 html { 
     background: url(../images/background_image.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -36,6 +36,7 @@ h1 {
     text-align: center;
 }
 
+/* Gives background and font color to titles in battles.html */
 h2 {
     background-color: #ED1D24;
     color: white;
@@ -56,6 +57,7 @@ p{
     z-index: 99;
 }
 
+/* Adds background image to the heroes on battles.html */
 .div_heroes {
     background-image: url(../images/Super_Hero_Pictures/Charcter\ Background.png);
     height: 273px;
@@ -71,6 +73,7 @@ p{
     top: 150px;
 }
 
+/* Font styling on title text in start-game.html */
 .title {
     color:white;
     font-size: 10rem;
@@ -93,6 +96,7 @@ p{
     -8px 7px #cdd2d5;
 }
 
+/* Font styling on title text in battles.html */
 .title_2 {
     color:white;
     font-size: 5rem;
@@ -129,6 +133,7 @@ p{
     height: auto;
 }
 
+/* Styling for the start game button */
 .button {
     font-family: 'Marvel', sans-serif;
     display: inline-block;
@@ -142,6 +147,7 @@ p{
     
 }
 
+/* Move over hover effect on start game button */
 .button:hover {
     background-color: #8b0000
 }
@@ -151,6 +157,7 @@ p{
     box-shadow: 0 5px #666;
 }
 
+/* Styling on the box that the characters are displayed in */
 .heroes{
     width: 225px;
     height: 300px;
@@ -159,6 +166,7 @@ p{
     border: 2px solid black;
 }
 
+/* Styling on names of the characers */
 .hero_name{
     border-bottom: 2px solid black;
     text-align: center;
@@ -168,6 +176,7 @@ p{
     color: white;
 }
 
+/* Hide the battle button */
 .hide{
     display: none;
 }
@@ -197,21 +206,25 @@ p{
     cursor: pointer;
 }
 
+/* Creates mouse over flip effect for the characters on battles.html */
 .back{
 	transform: rotateY(180deg);
 }
 
+/* Creates mouse over flip effect for the characters on battles.html */
 .heroes:hover .flipper{
 	transform: rotateY(180deg);
 }
 
+/* Creates mouse over hover effect for the characters on battles.html */
 .btn {
     outline-color: rgba(255, 255, 255, .5);
     outline-offset: 0px;
     text-shadow: none;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   } 
-  
+
+/* Creates mouse over hover effect for the characters on battles.html */  
 .btn:hover {
     box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
     text-shadow: 1px 1px 2px #427388; 
