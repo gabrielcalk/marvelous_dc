@@ -65,8 +65,16 @@ function show_results() {
         opponent_score_var ++;
         results_title.textContent = 'You Got Smashed!!!!'
         lost_won.textContent = 'You Lose By: ' + (sum_computer-sum_user) + ' points';
+
+        if (opponent_score_var === null){
+            opponent_score_var = 0
+        } else if(user_score_var === null){
+            user_score_var =0
+        }
+
         you.textContent = 'You: ' + user_score_var;
         opponent.textContent = 'Computer: ' + opponent_score_var;
+
         
         for (i = 0; i < 3; i++){
             hero_image[i].setAttribute('src', enemy_user[i].results[0].image.url)
@@ -76,8 +84,16 @@ function show_results() {
         user_score_var ++;
         results_title.textContent = 'You Smashed The Computer Team!!!!'
         lost_won.textContent = 'You Won By: ' + (sum_user-sum_computer) + ' points';
+
+        if (opponent_score_var === null){
+            opponent_score_var = 0
+        } else if(user_score_var === null){
+            user_score_var = 0
+        }
+
         you.textContent = 'You: ' + user_score_var;
         opponent.textContent = 'Computer: ' + opponent_score_var;
+    
 
         for (i = 0; i < 3; i++){
             hero_image[i].setAttribute('src', heroes_user[i].results[0].image.url)
@@ -127,7 +143,7 @@ function phrase(data){
     var author = document.createElement('H4');
     author.textContent = ' ' + random_phrase.data.author;
     marvelQuote.append(author);
-    
+
     var p_phrase = document.createElement('H3');
     p_phrase.textContent = random_phrase.data.quote;
     marvelQuote.append(p_phrase);
