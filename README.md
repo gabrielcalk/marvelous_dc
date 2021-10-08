@@ -53,6 +53,21 @@ The game loads to start-game.html and you press the start button. This moves you
 Working together on this group project effective communication is key. We took advantage of the full allottment of resources available to us. This include having a designated slack channel to share ideas and let others know of pull request. Through trial and error we were able to effectively navigate git branching and gel together as a team. This has given us the skills necessary to work on more group projects in the future. We look forward to future projects that may be on the horizon for us. This is a difficult process but our work on any project will never be completed. To quote Walt Disney "Disneyland will never be completed. It will continue to grow as long as there is imagination left in the world.” This same idea we will take with us with all future projects. In web development features are constantly changing. We need to continue to push forward and to improve build on knowledge we have learned.
 
 ### 6. Images of Mockup and Live Web Page
+Mockups:
+![image](https://user-images.githubusercontent.com/89816900/136597507-2674bd1c-3ecd-444e-84bf-ca57e5e25bc9.png)
+![image](https://user-images.githubusercontent.com/89816900/136597548-6cd626b7-459f-4026-9934-d5969efcd3b4.png)
+![image](https://user-images.githubusercontent.com/89816900/136597569-c0f3c649-de0e-4f5d-9453-179ca19bd2b6.png)
+![image](https://user-images.githubusercontent.com/89816900/136597591-a336109c-c466-4070-846b-6957e2d649a1.png)
+
+Project:
+![image](https://user-images.githubusercontent.com/89816900/136597675-511f404b-0da8-4d11-9b66-33a6c26f193f.png)
+![image](https://user-images.githubusercontent.com/89816900/136597691-7312036d-d86d-4a54-8b22-6749ed78d515.png)
+![image](https://user-images.githubusercontent.com/89816900/136597710-3ef15012-fc5f-49fd-8231-0c3d291e514f.png)
+![image](https://user-images.githubusercontent.com/89816900/136597725-898d37b0-2093-42ec-8987-1b8a95ae3dc9.png)
+![image](https://user-images.githubusercontent.com/89816900/136597744-8b4a4fa9-60ce-4f4f-a55f-a4dd1b8c8a4b.png)
+![image](https://user-images.githubusercontent.com/89816900/136597762-e65c60c7-d7dc-4f8d-9237-0d9d1e8376a4.png)
+![image](https://user-images.githubusercontent.com/89816900/136597779-6b880647-67b2-4418-baa9-7b9c6afb59b3.png)
+
 
 ### 7. Link to the Live Page
 
