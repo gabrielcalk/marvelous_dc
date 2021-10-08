@@ -42,7 +42,12 @@ b. the second API used was  super-hero-quotes. This API pulls quotes only from M
 
 c. In order for the group project to work effectively we implememted Agile Software development. At the beginning of the week we had a meeting where we planned what APIs we wanted to use and how to implement them. Then we designed a mock up of our page including its functionality. Then we developed the page by adding each files framework and tested each change to see what worked what did not. Then each change was evaluated by the programmer to see if it was a viable change or not.
 
+![image](https://user-images.githubusercontent.com/89816900/136598329-29cd9d71-9743-4d4a-9a99-cff4bf325959.png)
+
 d. In order to implement Agile Software development we took advantage of git branching. Git branching allows each programmer to work in a satellite branch. when the user pushes their work to their side branch. The changes are peer reviewed to make sure that none of the upcoming changes will effect main branch. This also allows for user communication to see the progress of each user. If a change is submitted that will cause a merge conflict github will protect the main repository by making sure some changes are not committed. Github also allows issues to be assigned to other group members and allows others to assign tast so bugs can be worked and task are not being worked on in two different branches this helps to resolve any potential merge conflicts.
+
+![image](https://user-images.githubusercontent.com/89816900/136598310-f5e93362-3d10-4d68-83a0-899962714ac6.png)
+
 
 ### 4. Directions on how to play Marvelous Battles
 
@@ -53,13 +58,16 @@ The game loads to start-game.html and you press the start button. This moves you
 Working together on this group project effective communication is key. We took advantage of the full allottment of resources available to us. This include having a designated slack channel to share ideas and let others know of pull request. Through trial and error we were able to effectively navigate git branching and gel together as a team. This has given us the skills necessary to work on more group projects in the future. We look forward to future projects that may be on the horizon for us. This is a difficult process but our work on any project will never be completed. To quote Walt Disney "Disneyland will never be completed. It will continue to grow as long as there is imagination left in the world.” This same idea we will take with us with all future projects. In web development features are constantly changing. We need to continue to push forward and to improve build on knowledge we have learned.
 
 ### 6. Images of Mockup and Live Web Page
+
 Mockups:
+
 ![image](https://user-images.githubusercontent.com/89816900/136597507-2674bd1c-3ecd-444e-84bf-ca57e5e25bc9.png)
 ![image](https://user-images.githubusercontent.com/89816900/136597548-6cd626b7-459f-4026-9934-d5969efcd3b4.png)
 ![image](https://user-images.githubusercontent.com/89816900/136597569-c0f3c649-de0e-4f5d-9453-179ca19bd2b6.png)
 ![image](https://user-images.githubusercontent.com/89816900/136597591-a336109c-c466-4070-846b-6957e2d649a1.png)
 
 Project:
+
 ![image](https://user-images.githubusercontent.com/89816900/136597675-511f404b-0da8-4d11-9b66-33a6c26f193f.png)
 ![image](https://user-images.githubusercontent.com/89816900/136597691-7312036d-d86d-4a54-8b22-6749ed78d515.png)
 ![image](https://user-images.githubusercontent.com/89816900/136597710-3ef15012-fc5f-49fd-8231-0c3d291e514f.png)
