@@ -1,5 +1,7 @@
+// Array with the heroes names
 var characterArraysuper = ["Spider-man", "Thor", "Gamora", "Iron Man", "Ultron", "Groot", "Falcon", "Scarlet Witch", "Ant-Man", "Black Panther", "Thanos", "Star-Lord", "Hulk", "Captain America", "Loki"]
 
+// Array with objects with the heroes name and their description
 var heroPowers = [
     {    
         character: "Spider-Man",
@@ -64,6 +66,7 @@ var heroPowers = [
     }
 ]
 
+// Array with the descriptions of other heroes that we can later add on the game
 var extraheroes = [
 {
     character:"Hawkeye",
