@@ -34,11 +34,20 @@ d. Implement Google Branching Workflows
 
 e. Prepare a professional presentation and readme file attached to the presentation.
 
+f. Use another css framework (Bulma)
+
+![image](https://user-images.githubusercontent.com/89816900/136602046-969d2228-9383-415d-b904-7cfe4e67ffcc.png)
+
+
 ### 3. Implementation
 
 a. The first APi used is SuperhHeroAPI this API pulls the data called powerscores. This gives a numeric value to assign to each character in order to give a comparision of who won the battle. The results of the comparision show up on the results.html and are committed to local storage. This allows the user to play multiple times and gives them the ability to compare their results with previous scores for the page.
 
+![image](https://user-images.githubusercontent.com/89816900/136601838-c4ba0630-3327-48f3-937d-cc0e049303f3.png)
+
 b. the second API used was  super-hero-quotes. This API pulls quotes only from MCU films and is used to generated a different film quote each time the page is refreshed or opened. 
+
+![image](https://user-images.githubusercontent.com/89816900/136601858-2014daff-6d84-4fec-95ac-29977fd1d433.png)
 
 c. In order for the group project to work effectively we implememted Agile Software development. At the beginning of the week we had a meeting where we planned what APIs we wanted to use and how to implement them. Then we designed a mock up of our page including its functionality. Then we developed the page by adding each files framework and tested each change to see what worked what did not. Then each change was evaluated by the programmer to see if it was a viable change or not.
 
