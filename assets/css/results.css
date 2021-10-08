@@ -6,6 +6,7 @@
     font-weight: bold;
 }
 
+/* Adding background on the results page */
 html { 
     background: url(../images/background_image.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -14,29 +15,35 @@ html {
     background-size: cover;
 }
 
+/* Setting the image size */
 img {
     width: 180px;
     height: 180px;
 }
 
+/* Adding a red color on the h4 font */
 h4{
     color: #ED1D24;
 }
 
+/* Adding some margin top on the div that contains the results */
 .div_results{
     margin-top: 150px;
 }
 
+/* adding some background color red on the .marvel_color */
 .marvel_color{
     background-color: #ED1D24;
 }
 
+/* Adding some border and padding on the div that contains the scores */
 .score {
     border: 8px solid #ED1D24;
     border-radius: 5px;
     padding: 35px;
 }
 
+/* Adding some padding, text aling and margin on the div that contains the quotes */
 #mcuQuotes{
     margin-top: 100px;
     text-align: center;
@@ -44,7 +51,7 @@ h4{
     padding-left: 150px;
 }
 
-
+/* Changing the padding on the phone */
 @media only screen and (max-width: 600px) {
     #mcuQuotes {
       padding-left: 20px;
