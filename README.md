@@ -94,7 +94,7 @@ https://gabrielcalk.github.io/marvelous_dc/
 
 ### 8. Acknowledgements
 
-We would like to thank the staff at UCF Bootcamp including John Dinsmore and Dan Rosenbaum. Your leadership and teaching have been greatly advanced this project. We would also like to thank our classmates in the UCF Bootcamp. It is an honor to get to work with you and we all look forward to future projects we will all create together. Below are a list of the following links we used to build our project. If you have any suggestions please contact us and we woul
+We would like to thank the staff at UCF Bootcamp including John Dinsmore and Dan Rosenbaum. Your leadership and teaching have greatly advanced this project. We would also like to thank our classmates in the UCF Bootcamp. It is an honor to get to work with you and we all look forward to future projects we will all create together. Below are a list of the following links we used to build our project. If you have any suggestions please contact us and we would value your input. Thank you for taking the time to view our readme. 
 
 https://codepen.io/thisisgravity/pen/WZoZEZ
 
